@@ -100,23 +100,20 @@
       <span class="pill-text">A fresh suggestion each day</span>
     </div>
 
-    <div class="footnote">No pressure. Come back whenever you like.</div>
+    <div class="footnote" id="footnote">No pressure. Come back whenever you like.</div>
   </div>
 </main>
 
-<!-- The daily suggestions live in their own file — edit missions.js to add or remove them. -->
+<!--
+  Content is managed in missions.csv (your spreadsheet).
+  missions.js below is COMPILED from that CSV — don't edit it by hand.
+  Workflow: edit missions.csv -> ask Claude to rebuild -> commit & push.
+-->
 <script src="missions.js"></script>
 
 <script>
-  // Friendly greeting per category. Any category not listed here still works —
-  // the card falls back to "Let's visit the <category> today".
-  var VISIT = {
-    Bathroom: "Let's visit the bathroom today",
-    Kitchen: "Let's visit the kitchen today",
-    Closet: "Let's visit the closet today",
-    Paper: "Let's sort some paper today",
-    Digital: "Let's tidy your phone today",
-  };
+  var DEFAULT_FOOTNOTE = 'No pressure. Come back whenever you like.';
+  var MISSIONS = window.MISSIONS || [];
 
   // Same calendar date -> same integer everywhere, so everyone shares the day's mission.
   function dayNumber(d) {
@@ -124,31 +121,30 @@
   }
 
   function render() {
-    // Safety net: if missions.js is missing or the list is empty, show a gentle note
-    // instead of a broken page.
-    if (typeof MISSIONS === 'undefined' || !MISSIONS.length) {
+    if (!MISSIONS.length) {
       document.getElementById('title').textContent = 'No suggestions yet';
-      document.getElementById('desc').textContent = 'Add some missions in missions.js to get started.';
+      document.getElementById('desc').textContent = 'Add a row to missions.csv, then rebuild.';
       return;
     }
 
     var d = new Date();
     var L = MISSIONS.length;
     var idx = ((dayNumber(d) % L) + L) % L;
-    var mission = MISSIONS[idx];
-    var visit = VISIT[mission.category] || "Let's visit the " + mission.category.toLowerCase() + " today";
+    var m = MISSIONS[idx];
     var dateLabel = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
 
-    document.getElementById('visit').textContent = visit;
+    document.getElementById('visit').textContent = m.greeting || '';
     document.getElementById('date').textContent = dateLabel;
-    document.getElementById('emoji').textContent = mission.emoji;
-    document.getElementById('title').textContent = mission.title;
-    document.getElementById('desc').textContent = mission.desc;
+    document.getElementById('emoji').textContent = m.emoji || '';
+    document.getElementById('title').textContent = m.title || '';
+    document.getElementById('desc').textContent = m.description || '';
+    document.getElementById('footnote').textContent = m.footnote || DEFAULT_FOOTNOTE;
   }
 
   render();
   // Re-render each minute so the mission flips over at midnight without a reload.
   setInterval(render, 60000);
+</script>
 </script>
 </body>
 </html>
