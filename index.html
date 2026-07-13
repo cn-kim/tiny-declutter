@@ -104,25 +104,12 @@
   </div>
 </main>
 
-<script>
-  var MISSIONS = [
-    { emoji: '🧴', cat: 'Bathroom', title: 'Toss one empty bottle', desc: 'Find one empty shampoo or lotion bottle and throw it away now.' },
-    { emoji: '💊', cat: 'Bathroom', title: 'Clear expired medicine', desc: 'Check one shelf and bin a single expired medicine.' },
-    { emoji: '🧼', cat: 'Bathroom', title: 'Ditch a hotel toiletry', desc: "Remove one tiny hotel soap or bottle you'll never use." },
-    { emoji: '🌶️', cat: 'Kitchen', title: 'Drop one old spice', desc: 'Find a spice past its date and toss it out.' },
-    { emoji: '🥡', cat: 'Kitchen', title: 'Lidless container out', desc: 'Recycle one food container that has no matching lid.' },
-    { emoji: '🥢', cat: 'Kitchen', title: 'Fewer spare chopsticks', desc: 'Remove a handful of duplicate takeaway chopsticks.' },
-    { emoji: '👕', cat: 'Closet', title: 'One shirt you skip', desc: "Pull out one shirt you haven't worn in over a year." },
-    { emoji: '🧥', cat: 'Closet', title: 'Bin a broken hanger', desc: 'If you have one, throw away a bent or broken hanger.' },
-    { emoji: '🧦', cat: 'Closet', title: 'Match one sock pair', desc: 'Reunite a single pair of stray socks.' },
-    { emoji: '📄', cat: 'Paper', title: 'Go paperless once', desc: 'Switch one paper statement over to email.' },
-    { emoji: '🧾', cat: 'Paper', title: 'Recycle an old receipt', desc: 'Grab one receipt you no longer need and recycle it.' },
-    { emoji: '📑', cat: 'Paper', title: 'Expired warranty out', desc: 'Throw away one warranty that has already expired.' },
-    { emoji: '📱', cat: 'Digital', title: 'Delete 5 screenshots', desc: 'Open your photos and delete five old screenshots.' },
-    { emoji: '🗑️', cat: 'Digital', title: 'Remove one app', desc: "Delete one app you haven't opened in months." },
-    { emoji: '✉️', cat: 'Digital', title: 'Unsubscribe once', desc: 'Open one newsletter and hit unsubscribe.' },
-  ];
+<!-- The daily suggestions live in their own file — edit missions.js to add or remove them. -->
+<script src="missions.js"></script>
 
+<script>
+  // Friendly greeting per category. Any category not listed here still works —
+  // the card falls back to "Let's visit the <category> today".
   var VISIT = {
     Bathroom: "Let's visit the bathroom today",
     Kitchen: "Let's visit the kitchen today",
@@ -137,11 +124,19 @@
   }
 
   function render() {
+    // Safety net: if missions.js is missing or the list is empty, show a gentle note
+    // instead of a broken page.
+    if (typeof MISSIONS === 'undefined' || !MISSIONS.length) {
+      document.getElementById('title').textContent = 'No suggestions yet';
+      document.getElementById('desc').textContent = 'Add some missions in missions.js to get started.';
+      return;
+    }
+
     var d = new Date();
     var L = MISSIONS.length;
     var idx = ((dayNumber(d) % L) + L) % L;
     var mission = MISSIONS[idx];
-    var visit = VISIT[mission.cat] || "Let's visit the " + mission.cat.toLowerCase() + " today";
+    var visit = VISIT[mission.category] || "Let's visit the " + mission.category.toLowerCase() + " today";
     var dateLabel = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
 
     document.getElementById('visit').textContent = visit;
