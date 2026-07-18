@@ -11,9 +11,9 @@ window.MISSIONS = [
   },
   {
     "emoji": "💊",
-    "greeting": "Let's visit the bathroom today",
-    "title": "Clear expired medicine",
-    "description": "Check one shelf and bin a single expired medicine.",
+    "greeting": "Let’s check your medicine today",
+    "title": "Clear unused medicine",
+    "description": "Look through your medicine and remove one item that’s expired or no longer needed.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
