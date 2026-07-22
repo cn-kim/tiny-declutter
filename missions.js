@@ -3,13 +3,6 @@
 // 16 missions compiled.
 window.MISSIONS = [
   {
-    "emoji": "🧴",
-    "greeting": "Let's visit the bathroom today",
-    "title": "Toss one empty bottle",
-    "description": "Find one empty shampoo or lotion bottle and throw it away now.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
     "emoji": "💊",
     "greeting": "Let’s check your medicine today",
     "title": "Clear unused medicine",
@@ -28,6 +21,20 @@ window.MISSIONS = [
     "greeting": "Let's sort some paper today",
     "title": "Go paperless once",
     "description": "Switch one paper statement over to email.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🧴",
+    "greeting": "Let's visit the bathroom today",
+    "title": "Toss one empty bottle",
+    "description": "Find one empty shampoo or lotion bottle and throw it away now.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "✉️",
+    "greeting": "Let's tidy your phone today",
+    "title": "Unsubscribe once",
+    "description": "Open one newsletter and hit unsubscribe.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
@@ -105,13 +112,6 @@ window.MISSIONS = [
     "greeting": "Let's tidy your phone today",
     "title": "Remove one app",
     "description": "Delete one app you haven't opened in months.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "✉️",
-    "greeting": "Let's tidy your phone today",
-    "title": "Unsubscribe once",
-    "description": "Open one newsletter and hit unsubscribe.",
     "footnote": "No pressure. Come back whenever you like."
   }
 ];
