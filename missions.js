@@ -1,6 +1,6 @@
 // AUTO-GENERATED from missions.csv — do NOT edit by hand.
 // To change content: edit missions.csv, then rebuild (Claude runs build_missions.py).
-// 15 missions compiled.
+// 16 missions compiled.
 window.MISSIONS = [
   {
     "emoji": "🧴",
@@ -14,6 +14,20 @@ window.MISSIONS = [
     "greeting": "Let’s check your medicine today",
     "title": "Clear unused medicine",
     "description": "Look through your medicine and remove one item that’s expired or no longer needed.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "📦",
+    "greeting": "Let’s visit your storage today",
+    "title": "Clear one empty box",
+    "description": "Choose one empty product box you’re ready to let go of and recycle it.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "📄",
+    "greeting": "Let's sort some paper today",
+    "title": "Go paperless once",
+    "description": "Switch one paper statement over to email.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
@@ -63,13 +77,6 @@ window.MISSIONS = [
     "greeting": "Let's visit the closet today",
     "title": "Match one sock pair",
     "description": "Reunite a single pair of stray socks.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "📄",
-    "greeting": "Let's sort some paper today",
-    "title": "Go paperless once",
-    "description": "Switch one paper statement over to email.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
