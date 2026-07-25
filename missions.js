@@ -1,7 +1,14 @@
 // AUTO-GENERATED from missions.csv — do NOT edit by hand.
 // To change content: edit missions.csv, then rebuild (Claude runs build_missions.py).
-// 16 missions compiled.
+// 17 missions compiled.
 window.MISSIONS = [
+  {
+    "emoji": "🗑️",
+    "greeting": "Let's tidy your phone today",
+    "title": "Remove one app",
+    "description": "Delete one app you haven't opened in months.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
   {
     "emoji": "💊",
     "greeting": "Let’s check your medicine today",
@@ -28,6 +35,13 @@ window.MISSIONS = [
     "greeting": "Let's visit the bathroom today",
     "title": "Toss one empty bottle",
     "description": "Find one empty shampoo or lotion bottle and throw it away now.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🪥",
+    "greeting": "Let’s visit the bathroom today",
+    "title": "Clear old toothpaste",
+    "description": "Recycle any empty tube — or if one's nearly done, finish it before opening a new one.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
@@ -105,13 +119,6 @@ window.MISSIONS = [
     "greeting": "Let's tidy your phone today",
     "title": "Delete 5 screenshots",
     "description": "Open your photos and delete five old screenshots.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "🗑️",
-    "greeting": "Let's tidy your phone today",
-    "title": "Remove one app",
-    "description": "Delete one app you haven't opened in months.",
     "footnote": "No pressure. Come back whenever you like."
   }
 ];
