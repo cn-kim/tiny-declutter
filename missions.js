@@ -1,47 +1,75 @@
 // AUTO-GENERATED from missions.csv — do NOT edit by hand.
 // To change content: edit missions.csv, then rebuild (Claude runs build_missions.py).
-// 17 missions compiled.
+// 20 missions compiled.
 window.MISSIONS = [
-  {
-    "emoji": "🗑️",
-    "greeting": "Let's tidy your phone today",
-    "title": "Remove one app",
-    "description": "Delete one app you haven't opened in months.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "💊",
-    "greeting": "Let’s check your medicine today",
-    "title": "Clear unused medicine",
-    "description": "Look through your medicine and remove one item that’s expired or no longer needed.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "📦",
-    "greeting": "Let’s visit your storage today",
-    "title": "Clear one empty box",
-    "description": "Choose one empty product box you’re ready to let go of and recycle it.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "📄",
-    "greeting": "Let's sort some paper today",
-    "title": "Go paperless once",
-    "description": "Switch one paper statement over to email.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "🧴",
-    "greeting": "Let's visit the bathroom today",
-    "title": "Toss one empty bottle",
-    "description": "Find one empty shampoo or lotion bottle and throw it away now.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
   {
     "emoji": "🪥",
     "greeting": "Let’s visit the bathroom today",
     "title": "Clear old toothpaste",
     "description": "Recycle any empty tube — or if one's nearly done, finish it before opening a new one.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🪒",
+    "greeting": "Let’s visit the bathroom today",
+    "title": "Clear old razors",
+    "description": "Remove a razor handle you no longer use, or discard any used blade cartridges you’ve been keeping.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🔋",
+    "greeting": "Let’s check a drawer today",
+    "title": "Gather old batteries",
+    "description": "Collect any loose or used batteries and keep them in one place for recycling.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🪮",
+    "greeting": "Let’s visit the bathroom today",
+    "title": "Clear an old comb",
+    "description": "If you find a broken or unused comb, let it go.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🧥",
+    "greeting": "Let's visit the closet today",
+    "title": "Bin a broken hanger",
+    "description": "If you have one, throw away a bent or broken hanger.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🧦",
+    "greeting": "Let's visit the closet today",
+    "title": "Match one sock pair",
+    "description": "Reunite a single pair of stray socks.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🧾",
+    "greeting": "Let's sort some paper today",
+    "title": "Recycle an old receipt",
+    "description": "Grab one receipt you no longer need and recycle it.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "📑",
+    "greeting": "Let's sort some paper today",
+    "title": "Expired warranty out",
+    "description": "Throw away one warranty that has already expired.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "📱",
+    "greeting": "Let's tidy your phone today",
+    "title": "Delete 5 screenshots",
+    "description": "Open your photos and delete five old screenshots.",
+    "footnote": "No pressure. Come back whenever you like."
+  },
+  {
+    "emoji": "🗑️",
+    "greeting": "Let's tidy your phone today",
+    "title": "Remove one app",
+    "description": "Delete one app you haven't opened in months.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
@@ -87,38 +115,31 @@ window.MISSIONS = [
     "footnote": "No pressure. Come back whenever you like."
   },
   {
-    "emoji": "🧥",
-    "greeting": "Let's visit the closet today",
-    "title": "Bin a broken hanger",
-    "description": "If you have one, throw away a bent or broken hanger.",
+    "emoji": "💊",
+    "greeting": "Let’s check your medicine today",
+    "title": "Clear unused medicine",
+    "description": "Look through your medicine and remove one item that’s expired or no longer needed.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
-    "emoji": "🧦",
-    "greeting": "Let's visit the closet today",
-    "title": "Match one sock pair",
-    "description": "Reunite a single pair of stray socks.",
+    "emoji": "📦",
+    "greeting": "Let’s visit your storage today",
+    "title": "Clear one empty box",
+    "description": "Choose one empty product box you’re ready to let go of and recycle it.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
-    "emoji": "🧾",
+    "emoji": "📄",
     "greeting": "Let's sort some paper today",
-    "title": "Recycle an old receipt",
-    "description": "Grab one receipt you no longer need and recycle it.",
+    "title": "Go paperless once",
+    "description": "Switch one paper statement over to email.",
     "footnote": "No pressure. Come back whenever you like."
   },
   {
-    "emoji": "📑",
-    "greeting": "Let's sort some paper today",
-    "title": "Expired warranty out",
-    "description": "Throw away one warranty that has already expired.",
-    "footnote": "No pressure. Come back whenever you like."
-  },
-  {
-    "emoji": "📱",
-    "greeting": "Let's tidy your phone today",
-    "title": "Delete 5 screenshots",
-    "description": "Open your photos and delete five old screenshots.",
+    "emoji": "🧴",
+    "greeting": "Let's visit the bathroom today",
+    "title": "Toss one empty bottle",
+    "description": "Find one empty shampoo or lotion bottle and throw it away now.",
     "footnote": "No pressure. Come back whenever you like."
   }
 ];
